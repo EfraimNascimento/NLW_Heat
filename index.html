@@ -31,15 +31,15 @@
                         <img src="images/build.svg" alt="Selo Rocketseat" />
                     </span>
                     
-                    <img src="https://lorempixel.com/185/185/people/" alt="Foto pessoal" />
+                    <img id="userPhoto" src="https://lorempixel.com/185/185/people/" alt="Foto pessoal" />
                 </div>
 
-                <h1 id="userName">Efraim Nascimento</h1>
+                <h1 id="userName">Efraim </h1>
 
-                <a href="https://github.com/EfraimNascimento" target="_blank" >
+                <a id="userLink" href="https://github.com/maykbrito" target="_blank" >
                     <img src="images/github 2.svg" alt="Icone github">
-                    Efraim</a>
-                    <p>An instructor focused on helping pople
+                    <span id="userLogin">Efraim</span></a>
+                    <p id="userBio">An instructor focused on helping pople
                          start programming for web</p>
 
                 <ul id="socialLinks">
@@ -64,35 +64,7 @@
 
         </main>
         
-        <script>
-            const LinksSocialMedia = {
-                github : "EfraimNascimento",
-                youtube : "EfraimNascimento",
-                facebook : "EfraimNascimento",
-                intagram : "EfraimNascimento",
-                twitter : "EfraimCamargo",
-            }
-
-            function changeSocialMediaLinks(){
-
-                for(let li of socialLinks.children){
-                    const social = (li.getAttribute('class'));                   
-
-                    li.children[0].href = `https://${social}.com/${LinksSocialMedia[social]}`
-                    
-                    //alert(li.children[0].href);
-                }
-
-                /*Chamando elemento HTML pelo id: userName.textContent = 'Marcelo' */
-            }
-
-            changeSocialMediaLinks()
-
-            /* camelCase
-            PascalCase
-            snake_case    */  
-
-        </script>
+        <script src="main.js"></script>
 
     </body>
 </html>
